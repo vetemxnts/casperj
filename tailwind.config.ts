@@ -13,6 +13,24 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        typewriter: {
+          '0%': {width: '0'},
+          '100%': {width: '100%'}
+        },
+        typewriterBeam: {
+          '0%, 100%': {backgroundColor: 'transparent'},
+          '50%': {backgroundColor: 'white'}
+        },
+        typewriterBeamClose: {
+          '0%': {backgroundColor: 'white'},
+          '100%': {backgroundColor: 'transparent'}
+        }
+      },
+      animation: {
+        typewriter: 'typewriter .5s cubic-bezier(0,.75,.25,1) 1.125s normal backwards',
+        typewriterbeam: 'typewriterBeam .25s step-end .5s normal backwards 3, typewriterBeamClose .25s cubic-bezier(0,.75,.25,1) 1.5s normal forwards',
+      }
     },
   },
   plugins: [],

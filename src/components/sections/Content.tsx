@@ -3,7 +3,7 @@ import {Element} from '../../constants/scroll'
 
 export default function Content() {
   return (
-    <main className="w-full h-[3000px] box-border">
+    <main className="w-full h-auto box-border">
       {contentItems.map(contentItem => {
         return (
           <>

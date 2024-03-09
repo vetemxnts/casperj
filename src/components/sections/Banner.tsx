@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <main className="bg-black w-full h-[calc(100vh-3rem)] bg-opacity-75 banner-body flex justify-start items-center overflow-hidden z-10">
+    <main className="[background:_linear-gradient(0deg,_rgba(0,0,0,0.85)_0%,_rgba(255,255,255,0)_100%)] w-full h-[calc(100vh-3rem)] banner-body flex justify-start items-center overflow-hidden z-10">
       <div className="flex flex-col gap-1">
         <div className="w-max h-auto flex flex-row pl-[10vw]">
           <h1 className="text-white text-[clamp(1rem,10vw,5rem)] overflow-hidden whitespace-nowrap mx-0 my-auto tracking-[0.5rem] animate-typewriter">casperj</h1>

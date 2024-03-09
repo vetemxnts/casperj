@@ -3,7 +3,7 @@ import {Link} from '../../constants/scroll';
 
 export default function Navbar() {
   return (
-    <nav className="bg-black bg-opacity-75 navbar-body w-full h-12 sticky self-start top-0 z-50">
+    <nav className="bg-black bg-opacity-85 navbar-body w-full h-12 sticky self-start top-0 z-50">
       <div className="w-full h-full box-border flex flex-row justify-center">
         {navItems.map(navItem => {
           return (

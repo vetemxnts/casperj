@@ -12,17 +12,17 @@ const contentItems = [
   {
     key: 1,
     title: 'services',
-    section: About
+    section: Projects
   },
   {
     key: 2,
     title: 'projects',
-    section: About
+    section: Services
   },
   {
     key: 3,
     title: 'socials',
-    section: About
+    section: Socials
   },
 
 ];

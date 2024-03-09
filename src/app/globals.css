@@ -10,8 +10,6 @@
   background-color: rgb(10 10 10);
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
-
-  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -53,4 +51,22 @@
 
 .text-shadow {
   text-shadow: black 0.25rem 0.25rem 0px
+}
+
+.hider1 { transition: transform .5s cubic-bezier(0,.75,.25,1); }
+.hider1-closed { transform: translateX(-100%); }
+.hider1-open { transform: none; }
+
+.hider2 { 
+  transition: 
+  transform .75s cubic-bezier(0,.75,.25,1), 
+  opacity .75s cubic-bezier(0,.75,.25,1); 
+}
+.hider2-closed {
+  opacity: 0;
+  transform: translateY(-4rem);
+}
+.hider2-open {
+  opacity: 1;
+  transform: none;
 }

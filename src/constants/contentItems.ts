@@ -1,7 +1,7 @@
-import About from "@/components/contentItems/about/About";
-import Projects from "@/components/contentItems/projects/Projects";
-import Services from "@/components/contentItems/services/Services";
-import Socials from "@/components/contentItems/socials/Socials";
+import About from "@/components/contentItems/About";
+import Projects from "@/components/contentItems/Projects";
+import Services from "@/components/contentItems/Services";
+import Socials from "@/components/contentItems/Socials";
 
 const contentItems = [
   {
@@ -12,17 +12,17 @@ const contentItems = [
   {
     key: 1,
     title: 'services',
-    section: About
+    section: Projects
   },
   {
     key: 2,
     title: 'projects',
-    section: About
+    section: Services
   },
   {
     key: 3,
     title: 'socials',
-    section: About
+    section: Socials
   },
 
 ];

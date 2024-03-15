@@ -1,3 +1,7 @@
 export default function Socials() {
-  return
+  return (
+    <>
+    
+    </>
+  );
 }

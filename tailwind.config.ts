@@ -28,8 +28,8 @@ const config: Config = {
         }
       },
       animation: {
-        typewriter: 'typewriter .5s cubic-bezier(0,.75,.25,1) 1.125s normal backwards',
-        typewriterbeam: 'typewriterBeam .25s step-end .5s normal backwards 3, typewriterBeamClose .25s cubic-bezier(0,.75,.25,1) 1.5s normal forwards',
+        typewriter: 'typewriter .5s cubic-bezier(0,.75,.25,1) .625s normal backwards',
+        typewriterbeam: 'typewriterBeam .25s step-end normal backwards 3, typewriterBeamClose .25s cubic-bezier(0,.75,.25,1) 1s normal forwards',
       }
     },
   },

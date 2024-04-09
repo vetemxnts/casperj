@@ -16,10 +16,6 @@ export default function Background() {
   }, []);
 
   return (
-    <div 
-      ref={backgroundRef}
-      className="bg-[url('/bg.png')] bg-repeat bg-center w-full h-[3000px] fixed -z-20"
-    >
-    </div>
+    <div ref={backgroundRef} className="bg-[url('/bg.png')] bg-repeat bg-center w-full h-[3000px] fixed -z-20"></div>
   );
 }

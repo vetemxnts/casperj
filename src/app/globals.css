@@ -4,18 +4,20 @@
 @tailwind variants;
 
 :root {
-  font-size: 32px;
-  background-color: black;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+	font-size: 32px;
+	background-color: black;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }

@@ -1,5 +1,5 @@
-import ScrollObserver from '@/components/misc/scrollObserver';
-import { techIcons } from '@/constants/icons';
+import ScrollObserver from '@/components/misc/ScrollObserver';
+import { techIcons } from '@/constants/providers/icons';
 
 export default function AboutIcons() {
 	return (
@@ -11,24 +11,22 @@ export default function AboutIcons() {
 			]}>
 			<h1 className='text-center text-white text-shadow-white p-4'>Technologies that I use:</h1>
 			<div className='lg:flex lg:flex-row md:grid-cols-[4rem_4rem_4rem] md:grid-rows-2 grid justify-around grid-cols-[4rem_4rem] grid-rows-3'>
-				{techIcons.map((item) => {
-					return (
-						<a
-							key={item.key}
-							href={item.href}
-							target='_blank'
-							className='w-16 h-20 grid place-items-center gap-0 group/tech'>
-							<div className='w-16 h-16 grid place-items-center'>
-								<item.icon />
-							</div>
-							<div
-								className='w-16 h-4 text-[0.5rem] text-white grid place-items-center
+				{techIcons.map((item) => (
+					<a
+						key={item.key}
+						href={item.href}
+						target='_blank'
+						className='w-16 h-20 grid place-items-center gap-0 group/tech'>
+						<div className='w-16 h-16 grid place-items-center'>
+							<item.icon />
+						</div>
+						<div
+							className='w-16 h-4 text-[0.5rem] text-white grid place-items-center
               text-shadow-transparent group-hover/tech:text-shadow-white transition-text-shadow ease-smooth duration-.5s'>
-								{item.name}
-							</div>
-						</a>
-					);
-				})}
+							{item.name}
+						</div>
+					</a>
+				))}
 			</div>
 		</ScrollObserver>
 	);

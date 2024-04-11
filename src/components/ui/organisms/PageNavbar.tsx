@@ -1,14 +1,19 @@
-import navItems from '@/constants/navItems';
-import { Link } from '@/constants/scroll';
+import { Link } from '@/constants/providers/scroll';
 
-export default function Navbar() {
+const navbarItems = [
+	{ key: 0, name: 'About' },
+	{ key: 1, name: 'Projects' },
+	{ key: 2, name: 'Socials' },
+];
+
+export default function PageNavbar() {
 	return (
 		<nav className='bg-black bg-opacity-85 [backdrop-filter:_blur(1.5px)] border-none [border-bottom:_solid_2px_white] w-full h-12 sticky self-start top-0 z-50'>
 			<div className='w-full h-full flex flex-row justify-center'>
-				{navItems.map((navItem) => {
+				{navbarItems.map((navItem) => {
 					return (
 						<Link
-							to={navItem.references}
+							to={navItem.name}
 							offset={-96}
 							duration={500}
 							smooth={'easeOutQuint'}

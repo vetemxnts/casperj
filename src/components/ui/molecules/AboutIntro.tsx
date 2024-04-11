@@ -1,4 +1,4 @@
-import ScrollObserver from '@/components/misc/scrollObserver';
+import ScrollObserver from '@/components/misc/ScrollObserver';
 
 export default function AboutIntro() {
 	return (

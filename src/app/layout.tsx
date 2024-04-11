@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-import { notoSansMono } from '@/constants/fonts';
+import { notoSansMono } from '@/constants/providers/fonts';
 
 export const metadata: Metadata = {
 	title: 'CASPERJ | Kacper Jeznach',

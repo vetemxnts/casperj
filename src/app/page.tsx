@@ -1,15 +1,17 @@
-import Banner from '@/components/sections/Banner';
-import Navbar from '@/components/sections/Navbar';
-import Content from '@/components/sections/Content';
-import Background from '@/components/util/Background';
+import { PageBackground, PageBanner, PageNavbar } from '@/constants/ui/interfaceItems';
+import { About, Projects, Socials } from '@/constants/ui/contentItems';
 
 export default function Page() {
-  return (
-    <>
-      <Background />
-      <Banner />
-      <Navbar />
-      <Content />
-    </>
-  );
+	return (
+		<>
+			<PageBackground />
+			<PageBanner />
+			<PageNavbar />
+			<main className='h-[3000px]'>
+				<About />
+				<Projects />
+				<Socials />
+			</main>
+		</>
+	);
 }

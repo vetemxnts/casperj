@@ -3,7 +3,7 @@ import AboutIntro from '../molecules/AboutIntro';
 import AboutMain from '../molecules/AboutMain';
 import AboutSecondary from '../molecules/AboutSecondary';
 
-import { Element } from '@/constants/providers/scroll';
+import { Element } from '@/constants/providers/react-scroll';
 
 export default function About() {
 	return (

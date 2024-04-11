@@ -1,4 +1,4 @@
-import { Link } from '@/constants/providers/scroll';
+import { Link } from '@/constants/providers/react-scroll';
 
 const navbarItems = [
 	{ key: 0, name: 'About' },

@@ -7,7 +7,7 @@ import { Element } from '@/constants/providers/react-scroll';
 
 export default function About() {
 	return (
-		<Element name='About'>
+		<Element name='About' className='overflow-x-hidden'>
 			<section className='xl:px-12 px-4 py-12'>
 				<AboutIntro />
 			</section>

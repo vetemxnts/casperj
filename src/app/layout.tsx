@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' className={notoSansMono.className}>
-			<body className='w-[100svw] overflow-x-hidden'>{children}</body>
+			<body>{children}</body>
 		</html>
 	);
 }

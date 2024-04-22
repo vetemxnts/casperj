@@ -7,7 +7,9 @@ export default function PageBackground() {
 
 	useEffect(() => {
 		const onScroll = () => {
-			backgroundRef.current.style.transform = `translateY(-${window.scrollY / 4}px)`;
+			backgroundRef.current.style.transform = `translateY(-${
+				window.scrollY / 4
+			}px)`;
 		};
 		onScroll();
 

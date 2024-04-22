@@ -1,4 +1,8 @@
-import { PageBackground, PageBanner, PageNavbar } from '@/constants/ui/interfaceItems';
+import {
+	PageBackground,
+	PageBanner,
+	PageNavbar,
+} from '@/constants/ui/interfaceItems';
 import { About, Projects, Socials } from '@/constants/ui/contentItems';
 
 export default function Page() {

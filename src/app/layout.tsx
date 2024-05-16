@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-import { notoSansMono } from '@/constants/providers/fonts';
+import { poppins } from '@/constants/providers/fonts';
 
 export const metadata: Metadata = {
 	title: 'CASPERJ | Kacper Jeznach',
@@ -14,7 +14,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en' className={notoSansMono.className}>
+		<html lang='en' className={poppins.className}>
 			<body>{children}</body>
 		</html>
 	);

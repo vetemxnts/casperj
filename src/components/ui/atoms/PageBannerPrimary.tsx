@@ -1,14 +1,12 @@
-import PageBannerBeam from './PageBannerBeam';
-
 export default function PageBannerPrimary() {
 	return (
-		<div className='w-max h-auto flex flex-row px-[10vw]'>
-			<div className='text-white text-[clamp(1rem,10vw,5rem)] overflow-hidden whitespace-nowrap mx-0 my-auto tracking-[0.5rem] animate-typewriter'>
-				<p className='text-shadow-white'>
-					casper<b className='text-sky-400 text-shadow-sky'>j</b>
-				</p>
+		<div className='w-max h-[clamp(1.5rem,15vw,7.5rem)] px-[10vw] text-white text-[clamp(1rem,10vw,5rem)] overflow-hidden whitespace-nowrap tracking-widest'>
+			<div className='opacity-5 overflow-hidden animate-banner'>
+				casper<b className='text-red-400'>j</b>
 			</div>
-			<PageBannerBeam />
+			<div className='-translate-y-[clamp(1.5rem,15vw,7.5rem)] overflow-hidden animate-bannerDelayed'>
+				casper<b className='text-red-400'>j</b>
+			</div>
 		</div>
 	);
 }

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 
-export default function PageBackground() {
+export default function Background() {
 	const backgroundRef = useRef<HTMLDivElement>(null!);
 
 	useEffect(() => {

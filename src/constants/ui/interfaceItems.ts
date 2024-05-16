@@ -1,4 +1,4 @@
-import PageBackground from '@/components/ui/organisms/PageBackground';
-import PageBanner from '@/components/ui/organisms/PageBanner';
-import PageNavbar from '@/components/ui/organisms/PageNavbar';
-export { PageBackground, PageBanner, PageNavbar };
+import Background from '@/components/ui/organisms/Background';
+import Banner from '@/components/ui/organisms/Banner';
+import Navbar from '@/components/ui/organisms/Navbar';
+export { Background, Banner, Navbar };

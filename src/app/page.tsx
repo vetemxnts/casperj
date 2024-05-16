@@ -1,16 +1,12 @@
-import {
-	PageBackground,
-	PageBanner,
-	PageNavbar,
-} from '@/constants/ui/interfaceItems';
+import { Background, Banner, Navbar } from '@/constants/ui/interfaceItems';
 import { About, Projects, Socials } from '@/constants/ui/contentItems';
 
 export default function Page() {
 	return (
 		<>
-			<PageBackground />
-			<PageBanner />
-			<PageNavbar />
+			<Background />
+			<Banner />
+			<Navbar />
 			<main className='h-[3000px]'>
 				<About />
 				<Projects />

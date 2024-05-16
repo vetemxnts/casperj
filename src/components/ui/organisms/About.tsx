@@ -1,5 +1,5 @@
-import AboutIcons from '../molecules/AboutIcons';
-import AboutIntro from '../molecules/AboutIntro';
+import AboutIcons from '../atoms/AboutIcons';
+import AboutIntro from '../atoms/AboutIntro';
 import AboutMain from '../molecules/AboutMain';
 
 import { Element } from '@/constants/providers/react-scroll';

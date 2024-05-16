@@ -1,6 +1,6 @@
-import AboutIcons from './AboutIcons';
-import AboutPrimary from './AboutPrimary';
-import AboutSecondary from './AboutSecondary';
+import AboutIcons from '../atoms/AboutIcons';
+import AboutPrimary from '../atoms/AboutPrimary';
+import AboutSecondary from '../atoms/AboutSecondary';
 
 export default function AboutMain() {
 	return (

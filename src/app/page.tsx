@@ -1,17 +1,11 @@
-import { Background, Banner, Navbar } from '@/constants/ui/interfaceItems';
-import { About, Projects, Socials } from '@/constants/ui/contentItems';
+import UserInterface from '@/components/ui/templates/UserInterface';
+import Content from '@/components/ui/templates/Content';
 
 export default function Page() {
 	return (
 		<>
-			<Background />
-			<Banner />
-			<Navbar />
-			<main className='h-[3000px]'>
-				<About />
-				<Projects />
-				<Socials />
-			</main>
+			<UserInterface />
+			<Content />
 		</>
 	);
 }

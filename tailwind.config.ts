@@ -13,6 +13,8 @@ const config: Config = {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic':
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+				banner:
+					'linear-gradient(0deg,rgb(0,0,0) 0%,rgba(0,0,0,0) 100%), radial-gradient(circle,rgba(248,113,113,0.2) 0%,rgba(0,0,0,0.5) 100%)',
 			},
 			keyframes: {
 				banner: {

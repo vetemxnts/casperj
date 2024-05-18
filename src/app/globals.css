@@ -6,8 +6,8 @@
 :root {
 	font-size: 32px;
 	background-color: black;
-	scrollbar-width: none; /* Firefox */
-	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar {

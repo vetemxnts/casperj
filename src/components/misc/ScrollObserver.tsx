@@ -17,16 +17,13 @@ export default function ScrollObserver({
 
 	useEffect(() => {
 		const onScroll = () => {
-			if (
-				window.scrollY >
-				itemRef.current.offsetTop - window.innerHeight * 0.625
-			) {
+			let thresholdIn = itemRef.current.offsetTop - window.innerHeight * 0.625;
+			let thresholdOut = itemRef.current.offsetTop - window.innerHeight;
+
+			if (window.scrollY > thresholdIn) {
 				itemRef.current.classList.remove(...activeStyles[0]);
 				itemRef.current.classList.add(...activeStyles[1]);
-			} else if (
-				window.scrollY <
-				itemRef.current.offsetTop - window.innerHeight * 1.0
-			) {
+			} else if (window.scrollY < thresholdOut) {
 				itemRef.current.classList.remove(...activeStyles[1]);
 				itemRef.current.classList.add(...activeStyles[0]);
 			}

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-import { poppins } from '@/constants/providers/fonts';
+import { poppins } from '@/constants/fonts';
 
 export const metadata: Metadata = {
 	title: 'CASPERJ | Kacper Jeznach',

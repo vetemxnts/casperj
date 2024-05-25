@@ -18,8 +18,8 @@ export default function Background() {
 	}, []);
 
 	return (
-		<div
+		<span
 			ref={backgroundRef}
-			className="bg-[url('/bg.png')] bg-repeat bg-center w-full h-[3000px] fixed -z-20"></div>
+			className="bg-[url('/bg.png')] bg-repeat bg-center w-full h-[3000px] fixed -z-20"></span>
 	);
 }

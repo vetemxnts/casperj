@@ -4,7 +4,7 @@ import NavbarContainer from '../molecules/NavbarContainer';
 const navbarItems = [
 	{ key: 0, name: 'About' },
 	{ key: 1, name: 'Projects' },
-	{ key: 2, name: 'Socials' },
+	{ key: 2, name: 'Links' },
 ];
 
 export default function Navbar() {

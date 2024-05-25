@@ -1,4 +1,4 @@
-import Background from '../organisms/Background';
+import Background from '../atoms/Background';
 import Banner from '../organisms/Banner';
 import Navbar from '../organisms/Navbar';
 

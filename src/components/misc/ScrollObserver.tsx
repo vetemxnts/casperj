@@ -1,31 +1,22 @@
 'use client';
 
-import { useEffect, useRef, ReactNode } from 'react';
+import { useEffect, useRef } from 'react';
+import { scrollObserverProps } from '@/constants/types';
 
-type scrollProps = {
-	className?: string;
-	children?: ReactNode;
-	activeStyles: [onHidden: string[], onVisible: string[]];
-};
-
-export default function ScrollObserver({
-	className,
-	children,
-	activeStyles,
-}: scrollProps) {
+export default function ScrollObserver({ className, children, scrollAnimation }: scrollObserverProps) {
 	const itemRef = useRef<HTMLElement>(null!);
 
 	useEffect(() => {
 		const onScroll = () => {
-			let thresholdIn = itemRef.current.offsetTop - window.innerHeight * 0.625;
+			let thresholdIn = itemRef.current.offsetTop - window.innerHeight * 0.5;
 			let thresholdOut = itemRef.current.offsetTop - window.innerHeight;
 
 			if (window.scrollY > thresholdIn) {
-				itemRef.current.classList.remove(...activeStyles[0]);
-				itemRef.current.classList.add(...activeStyles[1]);
+				itemRef.current.classList.remove(...scrollAnimation.onHidden);
+				itemRef.current.classList.add(...scrollAnimation.onVisible);
 			} else if (window.scrollY < thresholdOut) {
-				itemRef.current.classList.remove(...activeStyles[1]);
-				itemRef.current.classList.add(...activeStyles[0]);
+				itemRef.current.classList.remove(...scrollAnimation.onVisible);
+				itemRef.current.classList.add(...scrollAnimation.onHidden);
 			}
 		};
 		onScroll();
@@ -34,12 +25,14 @@ export default function ScrollObserver({
 			window.removeEventListener(e, onScroll);
 			window.addEventListener(e, onScroll, { passive: true });
 		});
-	}, [activeStyles]);
+	}, [scrollAnimation]);
 
 	return (
 		<article
 			ref={itemRef}
-			className={`${className} ${activeStyles[0].join(' ')}`}>
+			className={`${className} ${scrollAnimation.onHidden.join(
+				' '
+			)} transition-transform-opacity ease-smooth duration-500`}>
 			{children}
 		</article>
 	);

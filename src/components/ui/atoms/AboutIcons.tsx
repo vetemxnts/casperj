@@ -3,7 +3,7 @@ import { techIcons } from '@/constants/icons';
 import { scrollAnimationStyle } from '@/constants/types';
 
 const animation: scrollAnimationStyle = {
-	onHidden: ['translate-x-12', 'opacity-0'],
+	onHidden: ['translate-x-8', 'opacity-0'],
 	onVisible: ['translate-x-0', 'opacity-100'],
 };
 

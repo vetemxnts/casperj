@@ -1,15 +1,11 @@
-import ScrollObserver from '@/components/misc/ScrollObserver';
-import { scrollAnimationStyle } from '@/constants/types';
-
-const animation: scrollAnimationStyle = {
-	onHidden: ['-translate-x-8', 'opacity-0'],
-	onVisible: ['-translate-x-0', 'opacity-100'],
-};
+import ProjectsListContainer from '../atoms/ProjectsListContainer';
+import ProjectsListHeader from '../atoms/ProjectsListHeader';
 
 export default function ProjectsList() {
 	return (
-		<ScrollObserver className='text-neutral-300 ' scrollAnimation={animation}>
-			There are currently no projects here.
-		</ScrollObserver>
+		<div className='flex flex-col gap-8'>
+			<ProjectsListHeader />
+			<ProjectsListContainer />
+		</div>
 	);
 }

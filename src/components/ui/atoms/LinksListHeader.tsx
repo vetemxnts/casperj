@@ -6,12 +6,10 @@ const animation: scrollAnimationStyle = {
 	onVisible: ['-translate-y-0', 'opacity-100'],
 };
 
-export default function ProjectsHeader() {
+export default function LinksListHeader() {
 	return (
 		<ScrollObserver scrollAnimation={animation}>
-			<h1 className='text-center text-neutral-300'>
-				My <b className='text-red-400'>Projects</b>
-			</h1>
+			<h1 className='text-center text-neutral-300'>Links</h1>
 		</ScrollObserver>
 	);
 }

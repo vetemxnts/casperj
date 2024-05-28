@@ -8,7 +8,7 @@ export default function ScrollObserver({ className, children, scrollAnimation }:
 
 	useEffect(() => {
 		const onScroll = () => {
-			let thresholdIn = itemRef.current.offsetTop - window.innerHeight * 0.5;
+			let thresholdIn = itemRef.current.offsetTop - window.innerHeight * 0.625;
 			let thresholdOut = itemRef.current.offsetTop - window.innerHeight;
 
 			if (window.scrollY > thresholdIn) {

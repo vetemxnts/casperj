@@ -13,8 +13,8 @@ export default function AboutListContainer() {
 		<ScrollObserver
 			className='lg:flex lg:flex-row md:grid-cols-[4rem_4rem_4rem] md:grid-rows-2 grid justify-around grid-cols-[4rem_4rem] grid-rows-3 gap-y-8'
 			scrollAnimation={animation}>
-			{aboutListItems.map((item) => (
-				<AboutListItem {...item} />
+			{aboutListItems.map((item, index) => (
+				<AboutListItem {...item} key={index} />
 			))}
 		</ScrollObserver>
 	);

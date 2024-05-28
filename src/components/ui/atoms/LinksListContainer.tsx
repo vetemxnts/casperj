@@ -13,8 +13,8 @@ export default function LinksListContainer() {
 		<ScrollObserver
 			className='w-full flex lg:flex-row flex-col justify-center items-center gap-8'
 			scrollAnimation={animation}>
-			{linksListItems.map((item) => (
-				<LinksListItem {...item} />
+			{linksListItems.map((item, index) => (
+				<LinksListItem {...item} key={index} />
 			))}
 		</ScrollObserver>
 	);

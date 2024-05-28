@@ -2,7 +2,7 @@ import ScrollObserver from '@/components/misc/ScrollObserver';
 import { scrollAnimationStyle } from '@/constants/types';
 
 const animation: scrollAnimationStyle = {
-	onHidden: ['-translate-y-4', 'opacity-0'],
+	onHidden: ['-translate-y-8', 'opacity-0'],
 	onVisible: ['-translate-y-0', 'opacity-100'],
 };
 

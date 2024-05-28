@@ -1,18 +1,13 @@
 import NavbarItem from '../atoms/NavbarItem';
-import NavbarContainer from '../molecules/NavbarContainer';
 
-const navbarItems = [
-	{ key: 0, name: 'About' },
-	{ key: 1, name: 'Projects' },
-	{ key: 2, name: 'Links' },
-];
+const navbarItems = ['About', 'Projects', 'Links'];
 
 export default function Navbar() {
 	return (
-		<NavbarContainer>
+		<nav className='bg-black bg-opacity-85 backdrop-blur-sm border-b-2 border-b-white w-full h-12 flex flex-row justify-center sticky self-start top-0 z-50'>
 			{navbarItems.map((navItem) => {
-				return <NavbarItem name={navItem.name} key={navItem.key} />;
+				return <NavbarItem name={navItem} />;
 			})}
-		</NavbarContainer>
+		</nav>
 	);
 }

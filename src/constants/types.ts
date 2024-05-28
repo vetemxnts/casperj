@@ -8,3 +8,9 @@ export type scrollObserverProps = {
 	children?: React.ReactNode;
 	scrollAnimation: scrollAnimationStyle;
 };
+
+export type iconWithCaption = {
+	icon: () => React.ReactNode;
+	name: string;
+	href: string;
+};

@@ -7,9 +7,7 @@ export default function Background() {
 
 	useEffect(() => {
 		const onScroll = () => {
-			backgroundRef.current.style.transform = `translateY(-${
-				window.scrollY / 4
-			}px)`;
+			backgroundRef.current.style.transform = `translateY(-${window.scrollY / 4}px)`;
 		};
 		onScroll();
 
@@ -18,8 +16,6 @@ export default function Background() {
 	}, []);
 
 	return (
-		<span
-			ref={backgroundRef}
-			className="bg-[url('/bg.png')] bg-repeat bg-center w-full h-[3000px] fixed -z-20"></span>
+		<span ref={backgroundRef} className="bg-[url('/bg.png')] bg-repeat bg-center w-full h-[3000px] fixed -z-20"></span>
 	);
 }
